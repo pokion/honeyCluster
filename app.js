@@ -8,6 +8,7 @@ if(imports.init.configStart()){
 
 	const port = process.env.PORT || 5000;
 	imports.app.listen(port, ()=> console.log(`server started on port ${port}`));
+	console.log(imports.init.config)
 
 }else{
 	throw new Error('Something goes super wrong :(');

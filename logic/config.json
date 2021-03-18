@@ -1,6 +1,9 @@
 {
     "login": "root",
     "password": "pass",
-    "database": "MONGODB",
+    "database": {
+        "db": "JSON",
+        "url": "/"
+    },
     "firstStart": true
 }

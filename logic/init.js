@@ -1,7 +1,10 @@
 const defaultConfig = {
 		login: "root",
 		password: "pass",
-		database: "JSON",
+		database: {
+			db: "JSON",
+			url: "/"
+		},
 		firstStart: true
 	};
 
@@ -15,7 +18,7 @@ function Init(imports){
 }
 //prepare to start machine and read the config file
 Init.prototype.configStart = function(){
-	this.config = new this.imports.JSONdb(__dirname+'/config.js');
+	this.config = new this.imports.JSONdb(__dirname+'/config.json');
 
 	switch(this.config.get("firstStart")){
 		case undefined:
