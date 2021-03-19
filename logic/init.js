@@ -37,4 +37,7 @@ Init.prototype.startMiddleware = function(app){
 	app.use(this.imports.express.static('public'));
 	app.use(this.imports.bodyParser.urlencoded({ extended: true }));
 }
+Init.prototype.setRoutes = function(app){
+	
+}
 module.exports = Init;

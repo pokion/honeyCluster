@@ -6,6 +6,7 @@ const cookie = require('cookie-parser');
 const JSONdb = require('simple-json-db');
 const fs = require('fs');
 const init = require(__dirname+'/logic/init.js');
+const db = require(__dirname+'/db/maindb.js');
 
 const imports = {
 	express, 
@@ -15,7 +16,8 @@ const imports = {
 	cookie,
 	JSONdb,
 	fs,
-	init
+	init,
+	db
 }
 
 module.exports = imports;
