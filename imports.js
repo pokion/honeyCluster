@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const cookie = require('cookie-parser');
 const JSONdb = require('simple-json-db');
-const fs = require('fs');
 const init = require(__dirname+'/logic/init.js');
 const db = require(__dirname+'/db/maindb.js');
 
@@ -15,7 +14,6 @@ const imports = {
 	bcrypt,
 	cookie,
 	JSONdb,
-	fs,
 	init,
 	db
 }
